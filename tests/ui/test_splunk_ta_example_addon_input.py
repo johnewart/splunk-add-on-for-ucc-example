@@ -16,6 +16,7 @@ import configparser
 import os
 import json
 import copy
+from pytest_splunk_addon_ui_smartx.base_test import SeleniumHelper
 from base64 import b64decode 
 
 
