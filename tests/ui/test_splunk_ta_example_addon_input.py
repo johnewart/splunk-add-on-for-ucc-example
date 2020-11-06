@@ -348,6 +348,7 @@ class TestInput(UccTester):
             r"Field Name is required",
             left_args={'expect_error': True}
             )
+        input_page.entity1.example_account.wait_for_values()
         self.assert_util(input_page.entity1.close_error, True)
 
     @pytest.mark.forwarder
@@ -583,6 +584,7 @@ class TestInput(UccTester):
             r"Field Interval is required",
             left_args={'expect_error': True}
             )
+        input_page.entity1.example_account.wait_for_values()
         self.assert_util(input_page.entity1.close_error, True)
 
     @pytest.mark.forwarder
@@ -622,6 +624,7 @@ class TestInput(UccTester):
             r"Field Index is required",
             left_args={'expect_error': True}
             )
+        input_page.entity1.example_account.wait_for_values()    
         self.assert_util(input_page.entity1.close_error, True)
 
     @pytest.mark.forwarder
@@ -656,6 +659,7 @@ class TestInput(UccTester):
             r"Field Example Account is required",
             left_args={'expect_error': True}
             )
+        input_page.entity1.example_account.wait_for_values()    
         self.assert_util(input_page.entity1.close_error, True)
 
     @pytest.mark.forwarder
@@ -677,6 +681,7 @@ class TestInput(UccTester):
             r"Field Object is required",
             left_args={'expect_error': True}
             )
+        input_page.entity1.example_account.wait_for_values()    
         self.assert_util(input_page.entity1.close_error, True)
 
     @pytest.mark.forwarder
@@ -698,6 +703,7 @@ class TestInput(UccTester):
             r"Field Object Fields is required",
             left_args={'expect_error': True}
             )
+        input_page.entity1.example_account.wait_for_values()    
         self.assert_util(input_page.entity1.close_error, True)
 
     @pytest.mark.forwarder
@@ -721,6 +727,7 @@ class TestInput(UccTester):
             r"Field Order By is required",
             left_args={'expect_error': True}
             )
+        input_page.entity1.example_account.wait_for_values()    
         self.assert_util(input_page.entity1.close_error, True)
 
     @pytest.mark.forwarder
