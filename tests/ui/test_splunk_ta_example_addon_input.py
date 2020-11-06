@@ -333,6 +333,8 @@ class TestInput(UccTester):
     @pytest.mark.input
     def test_example_input_one_required_field_name(self, ucc_smartx_selenium_helper, ucc_smartx_rest_helper):
         """ Verifies required field name in example input one"""
+        selenium_helper = SeleniumHelper(ucc_smartx_configs.driver, ucc_smartx_configs.driver_version, splunk_web_uri, splunk_rest_uri, debug=ucc_smartx_configs.local_run, cred=(splunk["username"], splunk["password"]), headless=ucc_smartx_configs.headless_run, test_case="create_app_{}".format(appname))
+        selenium_helper.browser.maximize_window()
         input_page = InputPage(ucc_smartx_selenium_helper, ucc_smartx_rest_helper)
         input_page.create_new_input.select("Example Input One")
         input_page.entity1.example_account.wait_for_values()
@@ -569,6 +571,8 @@ class TestInput(UccTester):
     @pytest.mark.input
     def test_example_input_one_required_field_interval(self, ucc_smartx_selenium_helper, ucc_smartx_rest_helper):
         """ Verifies required field interval in example input one"""
+        selenium_helper = SeleniumHelper(ucc_smartx_configs.driver, ucc_smartx_configs.driver_version, splunk_web_uri, splunk_rest_uri, debug=ucc_smartx_configs.local_run, cred=(splunk["username"], splunk["password"]), headless=ucc_smartx_configs.headless_run, test_case="create_app_{}".format(appname))
+        selenium_helper.browser.maximize_window()        
         input_page = InputPage(ucc_smartx_selenium_helper, ucc_smartx_rest_helper)
         input_page.create_new_input.select("Example Input One")
         input_page.entity1.example_account.wait_for_values()
@@ -607,6 +611,8 @@ class TestInput(UccTester):
     @pytest.mark.input
     def test_example_input_one_required_field_index(self, ucc_smartx_selenium_helper, ucc_smartx_rest_helper):
         """ Verifies required field index in example input one"""
+        selenium_helper = SeleniumHelper(ucc_smartx_configs.driver, ucc_smartx_configs.driver_version, splunk_web_uri, splunk_rest_uri, debug=ucc_smartx_configs.local_run, cred=(splunk["username"], splunk["password"]), headless=ucc_smartx_configs.headless_run, test_case="create_app_{}".format(appname))
+        selenium_helper.browser.maximize_window()        
         input_page = InputPage(ucc_smartx_selenium_helper, ucc_smartx_rest_helper)
         input_page.create_new_input.select("Example Input One")
         input_page.entity1.example_account.wait_for_values()
@@ -644,6 +650,8 @@ class TestInput(UccTester):
     @pytest.mark.input
     def test_example_input_one_required_field_example_account(self, ucc_smartx_selenium_helper, ucc_smartx_rest_helper):
         """ Verifies required field Salesforce Account in example input one"""
+        selenium_helper = SeleniumHelper(ucc_smartx_configs.driver, ucc_smartx_configs.driver_version, splunk_web_uri, splunk_rest_uri, debug=ucc_smartx_configs.local_run, cred=(splunk["username"], splunk["password"]), headless=ucc_smartx_configs.headless_run, test_case="create_app_{}".format(appname))
+        selenium_helper.browser.maximize_window()        
         input_page = InputPage(ucc_smartx_selenium_helper, ucc_smartx_rest_helper)
         input_page.create_new_input.select("Example Input One")
         input_page.entity1.example_account.wait_for_values()
@@ -666,6 +674,8 @@ class TestInput(UccTester):
     @pytest.mark.input
     def test_example_input_one_required_field_object(self, ucc_smartx_selenium_helper, ucc_smartx_rest_helper):
         """ Verifies required field Object in example input one"""
+        selenium_helper = SeleniumHelper(ucc_smartx_configs.driver, ucc_smartx_configs.driver_version, splunk_web_uri, splunk_rest_uri, debug=ucc_smartx_configs.local_run, cred=(splunk["username"], splunk["password"]), headless=ucc_smartx_configs.headless_run, test_case="create_app_{}".format(appname))
+        selenium_helper.browser.maximize_window()        
         input_page = InputPage(ucc_smartx_selenium_helper, ucc_smartx_rest_helper)
         input_page.create_new_input.select("Example Input One")
         input_page.entity1.example_account.wait_for_values()
@@ -688,6 +698,8 @@ class TestInput(UccTester):
     @pytest.mark.input
     def test_example_input_one_required_field_object_fields(self, ucc_smartx_selenium_helper, ucc_smartx_rest_helper):
         """ Verifies required field Object Fields in example input one"""
+        selenium_helper = SeleniumHelper(ucc_smartx_configs.driver, ucc_smartx_configs.driver_version, splunk_web_uri, splunk_rest_uri, debug=ucc_smartx_configs.local_run, cred=(splunk["username"], splunk["password"]), headless=ucc_smartx_configs.headless_run, test_case="create_app_{}".format(appname))
+        selenium_helper.browser.maximize_window()        
         input_page = InputPage(ucc_smartx_selenium_helper, ucc_smartx_rest_helper)
         input_page.create_new_input.select("Example Input One")
         input_page.entity1.example_account.wait_for_values()
